@@ -219,16 +219,20 @@ http://66.228.47.228:8083/api/v1/evaluate
 ```
 User
   ↓
+Frontend (Streamlit, port 8501)
+  ↓
+Module D — LangGraph Orchestrator (port 8082)
+  ↓
 Agent A — Job Scout (port 8080)
   ↓
 Agent B — Cost of Living Calculator (port 8083)  ← This repo
-  ↓                    ↓
-Module A           Agent 2
-(Vector DB)    (Interview Prep)
-  ↓                    ↓
-        Module D — LangGraph Orchestrator
-                  ↓
-            Frontend (Streamlit)
+  ↓                         ↓
+Module A                 Agent 2
+(Vector DB, port 8000)   (Interview Prep, port 8081)
+  ↓                         ↓
+          merge_results
+               ↓
+    Frontend displays final results
 ```
 
 ---
