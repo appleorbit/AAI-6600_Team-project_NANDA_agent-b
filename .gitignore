@@ -1,0 +1,16 @@
+# 环境变量文件，包含 API Key，不上传
+# Environment file with API Key, do not upload
+.env
+
+# Python 虚拟环境，不需要上传
+# Python virtual environment, no need to upload
+venv/
+
+# Python 缓存文件
+# Python cache files
+__pycache__/
+*.pyc
+
+# 服务器日志文件
+# Server log files
+*.log
